@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-title: "Whole-document batches are smaller than they look: measuring within-document gradient correlation"
+title: "Long documents make your batch smaller than it looks: measuring within-document gradient correlation"
 message: "If you use this code or data, please cite it as below."
 type: dataset
-version: "1.0"
-doi: "10.5281/zenodo.23268862"
+version: "2.0"
+doi: "10.5281/zenodo.23270769"
 date-released: "2026-10-09"
 url: "https://severinvisionary.github.io/doc-batch-gradients/"
 repository-code: "https://github.com/SeverinVisionary/doc-batch-gradients"
@@ -28,12 +28,12 @@ keywords:
 license: CC-BY-4.0
 preferred-citation:
   type: report
-  title: "Whole-document batches are smaller than they look: measuring within-document gradient correlation"
+  title: "Long documents make your batch smaller than it looks: measuring within-document gradient correlation"
   authors:
     - given-names: Hanyu
       family-names: Yang
       orcid: "https://orcid.org/0009-0005-0419-4070"
   year: 2026
-  doi: "10.5281/zenodo.23268862"
+  doi: "10.5281/zenodo.23270769"
   publisher:
     name: Zenodo
