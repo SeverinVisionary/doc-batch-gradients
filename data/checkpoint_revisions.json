@@ -1,0 +1,19 @@
+{
+ "_note": "Hub commit of each checkpoint branch used in results/, read on 2026-10-09. probe.py loads the commit when the branch name is listed here.",
+ "models": {
+  "EleutherAI/pythia-410m": {
+   "step1000": "1091939841611a37efe2bdfdf2bfd4f7778b0b0c",
+   "step7000": "56bd5599961f5f20b21ef891c15e89a82bcaa88d",
+   "step36000": "2cbeb3d7ccc819b2a2a71852e1c117c051b89cef",
+   "step143000": "bba6a464f54bbf08fc174cfb351d9794d58af21d"
+  },
+  "EleutherAI/pythia-1.4b": {
+   "step7000": "883d01dd632bf5e914556c5471d15cbb95a6e173",
+   "step143000": "9cc5c8c8148a4e0115d9e29c6b4f21124cfe748a"
+  },
+  "allenai/OLMo-2-0425-1B": {
+   "stage1-step90000-tokens189B": "96bb4c53714658e494c743cd0099348190f91d45",
+   "stage1-step1907359-tokens4001B": "9d3e43659f00c17e6da23cf32333afd1fc39fa1a"
+  }
+ }
+}

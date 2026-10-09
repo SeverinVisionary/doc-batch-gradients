@@ -1,0 +1,5 @@
+data/spans_*.npz
+__pycache__/
+*.pyc
+*.log
+.DS_Store

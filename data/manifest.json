@@ -1,0 +1,689 @@
+{
+ "seed": 20261007,
+ "n_docs": 16,
+ "offset": 2048,
+ "span": 16384,
+ "tokenizers": {
+  "pythia": "EleutherAI/pythia-410m",
+  "olmo2": "allenai/OLMo-2-0425-1B"
+ },
+ "llama3_tokenizer": "NousResearch/Meta-Llama-3-8B",
+ "corpora": {
+  "PG19": {
+   "docs": [
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 970,
+     "title": "History of Liberia by J. H. T. McPherson",
+     "sha256_pythia": "657c69c4d6d9af1d83011525e13ddd0b33d4270e3fdec05ef8015f3bd1d0a397",
+     "ntok_pythia": 24153,
+     "sha256_olmo2": "70668e6826f424e9994a98ded2daf90377b5aa3cca60faa06a7d9457674bb947",
+     "ntok_olmo2": 23483
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 1035,
+     "title": "Damaged Goods The Great Play Les Avaries of Eugene Brieux",
+     "sha256_pythia": "a1000915dff2b2392bcc7bf61d5ccd6fa8a3ccd2a7c084b571003d13e9bd524c",
+     "ntok_pythia": 47625,
+     "sha256_olmo2": "2cd58dbe243a044b00e4656bb265187265e1fc7a927c2b2be4b9d9c2f3b2d800",
+     "ntok_olmo2": 45055
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 234,
+     "title": "Affairs of State by Burton E. Stevenson",
+     "sha256_pythia": "6fa35d10a624dca2e4e13794793f9877254e89468d7a187e7955c8eecb823965",
+     "ntok_pythia": 72757,
+     "sha256_olmo2": "48d598a4dd67c6e1b2f10e369e0c52eb038839d42b0ccf1b967154fd66559749",
+     "ntok_olmo2": 67911
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 1189,
+     "title": "At the Earth's Core by Edgar Rice Burroughs",
+     "sha256_pythia": "8c52d8c376f6a79e9944832c6979b7a7d2c523db674e094729be612e7ecba1ca",
+     "ntok_pythia": 67786,
+     "sha256_olmo2": "a52931c28ca7e39108c1e95d2523a9e97756452fe19b702caedcbd66a23f691b",
+     "ntok_olmo2": 65027
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 479,
+     "title": "Studies in Civics by James T. McCleary",
+     "sha256_pythia": "cee119292f70987aa40a85f6348ddda532162f2c1ace26fea12102cf8fbb1206",
+     "ntok_pythia": 182777,
+     "sha256_olmo2": "76f32672881b75b7b843c8747fc4368c8548bf7e01a9671e753cd19d7608aa44",
+     "ntok_olmo2": 174609
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 255,
+     "title": "The Atlantic Monthly Vol. 2 No. 12 October 1858 by Various",
+     "sha256_pythia": "dc67e89d122784df7aa696eea88f77b644f77d1c93ff81195dd9247ea60ab55b",
+     "ntok_pythia": 121017,
+     "sha256_olmo2": "653e9fc502b145da3c09e3dbbaadf527c4a6e2a46934084b395fe145f706fed8",
+     "ntok_olmo2": 117072
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 1132,
+     "title": "Flying U Ranch by B. M. Bower",
+     "sha256_pythia": "5d89a2368b29876128f54681f486df87c38f39f06628d8ac62e87f2954d135d5",
+     "ntok_pythia": 61350,
+     "sha256_olmo2": "4fd0ed23986da2f3b46131489e3cb0e07c79d489c530ade4c70097a70bf351d2",
+     "ntok_olmo2": 58404
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 92,
+     "title": "The Czar's Spy by William Le Queux",
+     "sha256_pythia": "cf873c3300042500e747c38fc7cb25c8bc9e62394862e8460d1f98111dcf8658",
+     "ntok_pythia": 130314,
+     "sha256_olmo2": "d34786d00293953f867f59f7001adbcd00ce530ca8baf9c25d2de8aab551ed12",
+     "ntok_olmo2": 122625
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 739,
+     "title": "The Half-Back by Ralph Henry Barbour",
+     "sha256_pythia": "25225786bf17b77ff80a415ff97f98fbab8effefd5289dbb4d82e1276ed73dad",
+     "ntok_pythia": 90588,
+     "sha256_olmo2": "47b1cf74238dab16cf60b89818e92818a865a00faa8a17f0f24bd2c8998ddeed",
+     "ntok_olmo2": 85672
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 371,
+     "title": "Adventures In Friendship by David Grayson",
+     "sha256_pythia": "99c857dd8bef0393bf92e8c35c63a5cf60524c4d573947d137283af0ac35ff28",
+     "ntok_pythia": 48923,
+     "sha256_olmo2": "b3393e879ec91cbcc5037d4cb520088549a2162fe2f6dea6c11ff3f8968d0720",
+     "ntok_olmo2": 46239
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 396,
+     "title": "The Lives of the Poets of Great Britain and Ireland (1753)",
+     "sha256_pythia": "53e93f937db0e31b805bbd1a08435b4ceee4323b62e41b9aacf8fd4fd06a7f9f",
+     "ntok_pythia": 145546,
+     "sha256_olmo2": "6b99254613111e245832f4e05f03842e8b29dcad70f16c006de23bf554bd5255",
+     "ntok_olmo2": 139713
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 824,
+     "title": "The Atlantic Monthly Vol. 10 No. 62 December 1862 by Various",
+     "sha256_pythia": "d8f4f88f46fb26a2c732149a329bbaf01a8ed220cabf9039e73bd67372734a24",
+     "ntok_pythia": 120891,
+     "sha256_olmo2": "1b7a88c211815976b7b4d7910b031efb64c7158a10090a14159e3cf83868e6b8",
+     "ntok_olmo2": 116313
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 799,
+     "title": "The German Classics of The Nineteenth and Twentieth Centuries",
+     "sha256_pythia": "c4a4d8e9e57dda16b98d8cab975de6a7ef3c3bc101d6a731be402128b6afcd55",
+     "ntok_pythia": 199818,
+     "sha256_olmo2": "1c5c08ea47005b0909cd2608dffa59599568e5ae6311768ec88c2c44327c82ec",
+     "ntok_olmo2": 181756
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 979,
+     "title": "The German Classics of The Nineteenth and Twentieth Centuries",
+     "sha256_pythia": "72d5ed4d7a071e8441583834de6d6b979732d5a217a4a8ac9bbde362c3d0bac4",
+     "ntok_pythia": 237391,
+     "sha256_olmo2": "6133a40f4546640329db7ffdfc4d74870d50a6917ceb4e04a50bf5fca4ac4edc",
+     "ntok_olmo2": 229542
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 229,
+     "title": "The Wolf's Long Howl by Stanley Waterloo",
+     "sha256_pythia": "4b0780f87fb289862c4a8c394b35fb3464f476f8a74a319a55a64e3df06a4f82",
+     "ntok_pythia": 90411,
+     "sha256_olmo2": "6f3e61e73cd4924c4b32fc3f62de9235f94c053be185b1bd1651becdf69fceba",
+     "ntok_olmo2": 87278
+    },
+    {
+     "repo": "emozilla/pg19",
+     "revision": "c021754c8e",
+     "file": "data/train-00000-of-00023-5263dc4323e881d2.parquet",
+     "row": 1029,
+     "title": "The Lions of the Lord by Harry Leon Wilson",
+     "sha256_pythia": "b5f13341b9f8beeb1fbda947262350a8c44f08293f183cc2a92c5f4242affc0f",
+     "ntok_pythia": 175048,
+     "sha256_olmo2": "27d8ffa75135d73a22cd8d401e7d827bd0297dce43d713472230803fe0af5933",
+     "ntok_olmo2": 166397
+    }
+   ],
+   "scanned": 17
+  },
+  "REPOS": {
+   "docs": [
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 166,
+     "doc_in_sample": 0,
+     "sha256_pythia": "fe8c73067b1e3319ef6a48d8b01f02130912a12a23ed984805892361b866e05a",
+     "ntok_pythia": 74613,
+     "sha256_olmo2": "8c7c992f9eec7f5d007d60b93765c7e254431ee26db7e299e672ed4d4de6bd95",
+     "ntok_olmo2": 65489
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 62,
+     "doc_in_sample": 0,
+     "sha256_pythia": "01039864e648b4e4117a8b21e89bf5e8e7d6fe834b53ae1a486e35761fbeb17b",
+     "ntok_pythia": 78549,
+     "sha256_olmo2": "3b90e6b0e06fc16d3aad159554b4faa0dd2c88e25df1810168d9fbbc015ff4c8",
+     "ntok_olmo2": 67308
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 200,
+     "doc_in_sample": 0,
+     "sha256_pythia": "f7cd199ab6b0954adcc4ac3865c4c5377f0b440238333ab499c403dad50dac56",
+     "ntok_pythia": 56741,
+     "sha256_olmo2": "00e4b4e0a91e4288b364c8083169f914ba412f36a288263f20a91eced962c86d",
+     "ntok_olmo2": 64782
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 254,
+     "doc_in_sample": 0,
+     "sha256_pythia": "c8d6e77869d77e012388fbaed2a554653be60cca3bfac256b98a1be395ce5dc8",
+     "ntok_pythia": 75736,
+     "sha256_olmo2": "8b6879d7a1042e1a0e35e01e60c9fe8a2e275191067e2e40ebc15ec05f9a2762",
+     "ntok_olmo2": 65536
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 57,
+     "doc_in_sample": 0,
+     "sha256_pythia": "15672d3624c5d0c9c585413eda2df9a1d5f70cd220a22a908cb53f85cd3fa2ed",
+     "ntok_pythia": 85503,
+     "sha256_olmo2": "0e8f7ef68f18d55eb80d0cd020e9c5cd1c1d7a8e8ef724b578791d7a2959652e",
+     "ntok_olmo2": 77158
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 73,
+     "doc_in_sample": 0,
+     "sha256_pythia": "91a8b119eb60c0bdaf551c4eec1c00cfda032890c8f289bc595a5062f0864686",
+     "ntok_pythia": 83803,
+     "sha256_olmo2": "7e6fbd9f3f338a7eec976c571021b53cb8a7759f0190530e5973180656cac2f7",
+     "ntok_olmo2": 65449
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 171,
+     "doc_in_sample": 0,
+     "sha256_pythia": "f2d78e1f3270f9fc191e7c02bbbf8e8ab8f677a09a4f4c2dfecf633baa39070e",
+     "ntok_pythia": 80195,
+     "sha256_olmo2": "485aa4ce08551523d9a37847a0607bbc6fb877a5e8bdbc5967e294b3dcae05d8",
+     "ntok_olmo2": 65536
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 64,
+     "doc_in_sample": 0,
+     "sha256_pythia": "fa5b2aa99751dd6e0e57738c42fe2b7b79cdb893455be16171460e1a75f47dbf",
+     "ntok_pythia": 82896,
+     "sha256_olmo2": "c44202986653a159833132ff46a8a205e3f76f0d2da82697e8b31d256ac09e7e",
+     "ntok_olmo2": 68492
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 135,
+     "doc_in_sample": 0,
+     "sha256_pythia": "0f57b9cb0d574a415c566da226d519693800963c98f81b673ceb9042c748cae3",
+     "ntok_pythia": 85236,
+     "sha256_olmo2": "6df2ca1688aac2998be8112333cee5c68fedba95c2db3e693310876482448c0c",
+     "ntok_olmo2": 65212
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 231,
+     "doc_in_sample": 0,
+     "sha256_pythia": "e58a8c77c7d7f619e088a5cf00a67a7f15afd16ab6c52a692c24bf702256b594",
+     "ntok_pythia": 79127,
+     "sha256_olmo2": "7d2a55f285072f1384a20de3eacde43e8bf0e582ccc22cd4b02029771ee61191",
+     "ntok_olmo2": 65542
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 237,
+     "doc_in_sample": 0,
+     "sha256_pythia": "5bd4057d8aae7e0baca90fc0f1a980295db41ac841b657b8a2c0b6e044f50048",
+     "ntok_pythia": 80364,
+     "sha256_olmo2": "f8bc76a32f3650afd6524957a4482f7557d4c1ef6a1f0ff65550a472513f868d",
+     "ntok_olmo2": 65497
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 88,
+     "doc_in_sample": 0,
+     "sha256_pythia": "9f551105f9b3756151a14529462c6d13fe7918596f46845eb0616c24e1112e49",
+     "ntok_pythia": 82693,
+     "sha256_olmo2": "1792953cf28c52dfcf74d10ec063255fd158558aacb219be1ed7ff6b75026472",
+     "ntok_olmo2": 65531
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 99,
+     "doc_in_sample": 0,
+     "sha256_pythia": "364fcac71a8d717d3e88d7c824b7f4f2be01ca305a193f82d242ba556a514c1f",
+     "ntok_pythia": 86374,
+     "sha256_olmo2": "0859aa76b373d01369808e44889928d235a5287d815ad40215fb87d28a1c3452",
+     "ntok_olmo2": 65532
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 182,
+     "doc_in_sample": 0,
+     "sha256_pythia": "5088cc2d3fb43cfbb48735180e464c02a50aed885fe25e6141a320684a5c09ea",
+     "ntok_pythia": 78749,
+     "sha256_olmo2": "13fa9799df0dd85c6c44eb0fb589742f2968ebdfc9f9e69314e84056244618df",
+     "ntok_olmo2": 65533
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 45,
+     "doc_in_sample": 0,
+     "sha256_pythia": "ead85638532b7c9af9061a8e2aa6bdff63188718be7a1f9c2d830c7a2946aaef",
+     "ntok_pythia": 81382,
+     "sha256_olmo2": "2c88d6f06632efba86ed8d678cf58ea619d074c8f62abf4237e9e9ae1b5eab6f",
+     "ntok_olmo2": 65492
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "thestackv1_concat_by_repo-65536/proc00-64/shard.00000.mds",
+     "sample": 100,
+     "doc_in_sample": 0,
+     "sha256_pythia": "819c7fe867fce7d619cfc2dc400ead19400e181152ea154271fc9d9ec47f91cb",
+     "ntok_pythia": 85606,
+     "sha256_olmo2": "d8bb1fb8ea0b3a6a93e8a7b63be0b9a8f02bcf0a51ed56611fc52a99e78d30b9",
+     "ntok_olmo2": 65526
+    }
+   ],
+   "scanned": 16
+  },
+  "ARXIV": {
+   "docs": [
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 166,
+     "doc_in_sample": 2,
+     "sha256_pythia": "713992ea713d61c8accccc14987d83dd3ad85bd06b60b2584d29f13997bb20ce",
+     "ntok_pythia": 35911,
+     "sha256_olmo2": "0ef851590c5eee7afc9577b0fa434fbe5881a51bae45bd16838ab089fee80aa0",
+     "ntok_olmo2": 36232
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 62,
+     "doc_in_sample": 1,
+     "sha256_pythia": "ba8e4cb9e9d660f9cc44fa6f664da6e261dd31a65a23ba0c751056781f1a6504",
+     "ntok_pythia": 29844,
+     "sha256_olmo2": "d7117475fcf9fa680aa59154c5496c572d286659390c81efa3ff29863d41b5ac",
+     "ntok_olmo2": 33019
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 200,
+     "doc_in_sample": 1,
+     "sha256_pythia": "a867ef3baec0a46e0fcc72875e5a6e6d088f1c273f1aba2274ff4a33125fb456",
+     "ntok_pythia": 19729,
+     "sha256_olmo2": "ea8801fa7ccd6d484b2f7800077eb05b2f896624cac9c270bf2a333a5d22e441",
+     "ntok_olmo2": 20468
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 254,
+     "doc_in_sample": 0,
+     "sha256_pythia": "e749fc68ef8d5eb2f6377ca12ea1f9e1f26d01a83a817febb6b7ff23431b0078",
+     "ntok_pythia": 56799,
+     "sha256_olmo2": "e43849a0ddc2fa8dd0af104aa7b2e27e54f615aa41c069bfb05fe8874f2dfc0e",
+     "ntok_olmo2": 59274
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 57,
+     "doc_in_sample": 0,
+     "sha256_pythia": "c8b16a3c01f347d255c6b7dec9bf9aa3a66d7511c505a3536fdda2db19cc1e68",
+     "ntok_pythia": 47933,
+     "sha256_olmo2": "b8f58a933c20485f872a7ae94ffd0cad0e61cd8af010704653c2d9680cfec9f2",
+     "ntok_olmo2": 48968
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 73,
+     "doc_in_sample": 1,
+     "sha256_pythia": "6a79ab49f0485fcbdbb4b3fc088efd2c25d396ded236e0208c662f459f1f3c21",
+     "ntok_pythia": 54123,
+     "sha256_olmo2": "2973cb2d9c7ee47db76a89e0b5f2f2af37ac4e9e60df6945b894f1bebe85a8ce",
+     "ntok_olmo2": 56698
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 171,
+     "doc_in_sample": 0,
+     "sha256_pythia": "d61072f2baa53de1998db73b1f7905422c6faa777309696df9ea6f9c705b8771",
+     "ntok_pythia": 20173,
+     "sha256_olmo2": "66c5fd744c2ebdf02b6c9c32b3260868b8a2c8746e894518d5dab0d50992e2b9",
+     "ntok_olmo2": 20796
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 171,
+     "doc_in_sample": 1,
+     "sha256_pythia": "e1275ba3fa5074b34431934c4fcd886a1ef16f35184acf6886b86e8ce1860c04",
+     "ntok_pythia": 47049,
+     "sha256_olmo2": "d38b11fce690e46701aba1a61f46e4360a7300843eb3a8f1b01b7adebb693170",
+     "ntok_olmo2": 44763
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 64,
+     "doc_in_sample": 1,
+     "sha256_pythia": "28751fe5a26d4a028fe092875878c93046bd29b92068eec35926c97a339e6144",
+     "ntok_pythia": 34687,
+     "sha256_olmo2": "64e4ab8433ecdd3b693c38adbff4f1dfd7cb6dc78e61e52cb5f7945bfad6f149",
+     "ntok_olmo2": 33467
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 64,
+     "doc_in_sample": 2,
+     "sha256_pythia": "d8b1e599763db874d1c80933b0707ab8105d3574ff279d8b72d4e28ece4247d8",
+     "ntok_pythia": 28000,
+     "sha256_olmo2": "7860ceb2c0e1be43a32c70a88777c6d3b1a9cafbca0d1eabc549d6f6a63e4442",
+     "ntok_olmo2": 28357
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 135,
+     "doc_in_sample": 3,
+     "sha256_pythia": "b675e236d8c807e7def9bd28cd6462385c9016863f136b111c863f8c03cf3b19",
+     "ntok_pythia": 35537,
+     "sha256_olmo2": "c6f73b0cbcd92797b82c69a9b2102eb9ca71cab4f39b61744db7eec38612ef75",
+     "ntok_olmo2": 36468
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 237,
+     "doc_in_sample": 1,
+     "sha256_pythia": "1ffae5971bf070606ef5da0b1de12e7e4fd1a461b94289a3bb8dd95eb21feb1d",
+     "ntok_pythia": 19567,
+     "sha256_olmo2": "4a4082f3140d6857ca49dd9abc97ea4422e2468af50ab654ceac0737ec6368a5",
+     "ntok_olmo2": 19130
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 88,
+     "doc_in_sample": 1,
+     "sha256_pythia": "bf4ab41bfce3d7a26ecf51d49af57a02e511ad9ca8b5b8ab2ed766932aac6a95",
+     "ntok_pythia": 22824,
+     "sha256_olmo2": "169e3190b66f4b3b9579395536448bae1f5ed8e0e83463ca64e80a45cbab1cb8",
+     "ntok_olmo2": 22291
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 88,
+     "doc_in_sample": 2,
+     "sha256_pythia": "79a45ee6f54f5a728f8e55e2af19494d9370df9fc9be1fd7318128cb93e5f18f",
+     "ntok_pythia": 29155,
+     "sha256_olmo2": "2d816880f8987fce569380f548ae476caed4501536354a7e33ff09f505726b3a",
+     "ntok_olmo2": 30983
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 99,
+     "doc_in_sample": 2,
+     "sha256_pythia": "8fb8e652d87fa6593f913ae1da71096e4e559d24b7f2649d91e39728a005d81b",
+     "ntok_pythia": 19208,
+     "sha256_olmo2": "1355a7ad2d2c55fa02e47fc48b064466bcf9aa4ff52b8f45b64fca19b40bdd8a",
+     "ntok_olmo2": 19014
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "arxiv/proc00-64/shard.00000.mds",
+     "sample": 182,
+     "doc_in_sample": 1,
+     "sha256_pythia": "ef41ab3479b81fc2bb0625762a203d0bdc30f51305e9f33f207dce0c381871e0",
+     "ntok_pythia": 24114,
+     "sha256_olmo2": "791699ce581e9d48f0fc5072b2714838ef745a890d3c0a9eade55d60929840bf",
+     "ntok_olmo2": 24546
+    }
+   ],
+   "scanned": 32
+  },
+  "WEB": {
+   "docs": [
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 166,
+     "n_packed_docs": 77,
+     "sha256_pythia": "69604eac694578619db1ebc9b56dc1131646730dd38a2f534aa9367de96332d2",
+     "ntok_pythia": 69260,
+     "sha256_olmo2": "981570a5ae0b087907ca3b2005f3c6f22c343e0ec860fb60ebaf43324002ad56",
+     "ntok_olmo2": 66474
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 62,
+     "n_packed_docs": 89,
+     "sha256_pythia": "49b1d5dc15d03328a8fccbe18e7a2ecb393d8d56c30cbe201795848f76196d8b",
+     "ntok_pythia": 69523,
+     "sha256_olmo2": "9974f9f142a68c8b92bb99e10064177dd53d77a5930c22f6d9de69b8a6eeaf44",
+     "ntok_olmo2": 67691
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 200,
+     "n_packed_docs": 93,
+     "sha256_pythia": "8af38bc52f2df57132e9bfeca8f70831d17a46d86c68f37462752fb84265f0c7",
+     "ntok_pythia": 69120,
+     "sha256_olmo2": "fa19a19c53a3d1531b1cd09ae3c48025fddef36b0071089cdbe942624ab19ae1",
+     "ntok_olmo2": 66673
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 254,
+     "n_packed_docs": 98,
+     "sha256_pythia": "31923804f89a0f612bf8026267b853029e33c1ace4357614927fdd28db0240db",
+     "ntok_pythia": 69746,
+     "sha256_olmo2": "d0e396d30a88938e9660f0c1879ff064404ee75c97c5383e8689c8053e9b32ee",
+     "ntok_olmo2": 66745
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 57,
+     "n_packed_docs": 82,
+     "sha256_pythia": "c8a9b173a4f041b626d331459c298a686b8ef2376284e114f0bfe3c4ea17e928",
+     "ntok_pythia": 69965,
+     "sha256_olmo2": "77b789f845b8c71d447b7546536cd41dcbceb06a3c0306f21c9f6c2d8630e299",
+     "ntok_olmo2": 66566
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 73,
+     "n_packed_docs": 89,
+     "sha256_pythia": "ac0d8b69164d5628bb18f1e0a788324b5ee5814bcced8b06b078846c411d7ae9",
+     "ntok_pythia": 69646,
+     "sha256_olmo2": "fe32bf3bc08ce55cd97ade34a2e9862a7a821d5dec670b85f12b9faacb1a4913",
+     "ntok_olmo2": 66640
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 171,
+     "n_packed_docs": 109,
+     "sha256_pythia": "565204298def2795aafe2f4d883382804436d10d1ab7f603fed87eb514793922",
+     "ntok_pythia": 70282,
+     "sha256_olmo2": "699a9d427280a594baadf4ee8a497fcf19da81fc18f11954732ebbe358dedda6",
+     "ntok_olmo2": 66888
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 64,
+     "n_packed_docs": 105,
+     "sha256_pythia": "7334f86836a5512613f9f3d4b424650d353b64936fd31e6f7ed9cbc39c401a0d",
+     "ntok_pythia": 69562,
+     "sha256_olmo2": "b4453d37409c3d55766e0e5ec7400e254fc12b1f34f9d73cc91de80e3ddf249a",
+     "ntok_olmo2": 66828
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 135,
+     "n_packed_docs": 114,
+     "sha256_pythia": "0f8b8d80a8c497c8fcc08a7507333afd6aee1a095f5044c2998953db10d10990",
+     "ntok_pythia": 70068,
+     "sha256_olmo2": "87e737a83053966787116867e7cb93746d6c9fe69448dc54042e5513310fda98",
+     "ntok_olmo2": 66952
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 231,
+     "n_packed_docs": 85,
+     "sha256_pythia": "3fcbc1244b3084276931c415632fc229c1c49ec64148139067e843df79a6051d",
+     "ntok_pythia": 68824,
+     "sha256_olmo2": "6c192835b6cef0edeb0cf0e368e1c2e779f51cdeb5df5d37ae9b00695169cae8",
+     "ntok_olmo2": 66647
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 237,
+     "n_packed_docs": 78,
+     "sha256_pythia": "3aced13a1d8ea9c167ca99c0e707c2708c70145313af1beda80a772d3ab38c09",
+     "ntok_pythia": 69763,
+     "sha256_olmo2": "f088c76761791f6c130ed13197a3118f9a8b0558640e3abcb562eaece122e6df",
+     "ntok_olmo2": 66762
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 88,
+     "n_packed_docs": 103,
+     "sha256_pythia": "8efb8677cc33c468b6d3db16f78a2656072d521c9269295c63b6ef5ecadb294d",
+     "ntok_pythia": 69952,
+     "sha256_olmo2": "017483c5fd4b3a849c8d5f7f1291050f2e63b19e38b8f121706fd037f188f607",
+     "ntok_olmo2": 66926
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 99,
+     "n_packed_docs": 92,
+     "sha256_pythia": "340cc815d05419f88eda987cd7bb370cb32718ddd2d1ea5ab300289d1189b09d",
+     "ntok_pythia": 69431,
+     "sha256_olmo2": "c47f584cc675e4696e2769b1eeb295c04e2e267a2fc618ee1f0ea6ddd333aa3b",
+     "ntok_olmo2": 66716
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 182,
+     "n_packed_docs": 88,
+     "sha256_pythia": "1c1c16edc9ef0bc5cd8df94031a98aace7965d5d4d771874f1eae902241c11cd",
+     "ntok_pythia": 69567,
+     "sha256_olmo2": "00641d5cb9e10f47118d5a5b60a11d84babbffe6aba1da8c726c65d8ab585c50",
+     "ntok_olmo2": 66610
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 45,
+     "n_packed_docs": 93,
+     "sha256_pythia": "9aa2793f24fd66f77a8ee6a8b5e05aee76f8efa018a96e0d5fd181e8bedbb20e",
+     "ntok_pythia": 69526,
+     "sha256_olmo2": "9c21c3e0b33e06e76c83aefd102257e6f7c2e4b581e14799f53d429bb53d3e58",
+     "ntok_olmo2": 66681
+    },
+    {
+     "repo": "princeton-nlp/prolong-data-64K",
+     "file": "fineweb-2023-50/proc00-64/shard.00000.mds",
+     "sample": 100,
+     "n_packed_docs": 109,
+     "sha256_pythia": "d9d1276ea125e89f1c5b02703534d238725b4f89268e1c3ea4e48fb1179675b3",
+     "ntok_pythia": 69530,
+     "sha256_olmo2": "bd5a23888f8dc6a96d5c40f2ff8ad52edf54392d42562b2ef973fa6d1c8b4b78",
+     "ntok_olmo2": 66901
+    }
+   ],
+   "scanned": 16
+  }
+ }
+}

@@ -1,0 +1,8 @@
+# Exact versions used for every results/*.json run (recorded in each file):
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+transformers==4.57.6
+numpy==2.4.6
+# data_prep.py only (rebuilds the input spans, which are not redistributed); versions were not recorded:
+pyarrow>=15,<25
+huggingface_hub>=0.25,<2
