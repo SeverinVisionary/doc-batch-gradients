@@ -13,7 +13,8 @@ Definitions (per cell, Gram K over chunks g_{d,k}):
              = noise variance of a document-contiguous batch unit over that of m independent chunks
              (B_simple ratio, contiguous / shuffled, at equal tokens). R(16K) is deff(16K).
   B_simple = C * sigma2 / S_cross tokens (shuffled chunks); contiguous = R(W) * that.
-CIs: 95% percentile bootstrap over documents (2000 reps), resampling documents within each shard.
+CIs: 95% percentile bootstrap over documents (2000 reps): documents are drawn with replacement from the pooled
+cell and the draws are regrouped by source shard (see boot()).
 """
 from __future__ import annotations
 

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Whole-document batches are smaller than they look: measuring within-document gradient correlation"
+message: "If you use this code or data, please cite it as below."
+type: dataset
+version: "1.0"
+doi: "10.5281/zenodo.23268862"
+date-released: "2026-10-09"
+url: "https://severinvisionary.github.io/doc-batch-gradients/"
+repository-code: "https://github.com/SeverinVisionary/doc-batch-gradients"
+authors:
+  - given-names: Hanyu
+    family-names: Yang
+    email: hanyu.yang.92@gmail.com
+    orcid: "https://orcid.org/0009-0005-0419-4070"
+abstract: >-
+  A preregistered measurement (one control-relative rule added after part of the data was seen) of
+  within-document gradient correlation on open language-model checkpoints
+  (Pythia-410M, Pythia-1.4B, OLMo-2-1B). At equal tokens, a whole-document 16K-token batch has 3.5-4.9x fewer
+  effective independent samples than packed web text for code repositories, about 2.3x fewer for arXiv papers
+  and 1.3-1.6x fewer for PG-19 books. Chunks were run as standalone 512-token sequences, so this is a proxy for
+  16K-context training; real long-context gradients were not measured.
+keywords:
+  - gradient noise
+  - critical batch size
+  - design effect
+  - long-context training
+  - language models
+license: CC-BY-4.0
+preferred-citation:
+  type: report
+  title: "Whole-document batches are smaller than they look: measuring within-document gradient correlation"
+  authors:
+    - given-names: Hanyu
+      family-names: Yang
+      orcid: "https://orcid.org/0009-0005-0419-4070"
+  year: 2026
+  doi: "10.5281/zenodo.23268862"
+  publisher:
+    name: Zenodo

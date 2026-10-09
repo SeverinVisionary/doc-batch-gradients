@@ -3,6 +3,8 @@
 **How much gradient noise do whole-document long-context batches add?** This is a preregistered measurement on
 open LM checkpoints.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268862.svg)](https://doi.org/10.5281/zenodo.23268862)
+
 Long-context training usually fills each sequence with a single long document, such as a book, a code
 repository or a paper. Chunks of one document are not independent samples. If their gradients are correlated,
 a batch of document-contiguous sequences carries fewer independent samples than its token count suggests: it
@@ -30,13 +32,17 @@ same model and checkpoint. Brackets are 95% document-bootstrap intervals.
 | PG-19 books | 1.56 [1.26, 1.98] | 1.30 [1.07, 1.67] | 2.20 / 1.75 |
 | FineWeb, packed (control) | 1 | 1 | 1.41 / 1.35 |
 
-**What this means in practice.** At equal tokens per step, a batch of whole 16K-token code-repository sequences
-behaves like a batch with roughly 3.5–5× fewer independent samples than packed web text. For arXiv the factor is
-about 2×; books are close to the control.
+**What this means in practice.** At equal tokens, a batch of 16K-token code-repository blocks (32 consecutive
+512-token chunks per document) has roughly 3.5–5× fewer effective independent samples than packed web text. For arXiv the factor is
+about 2×; books are close to the control. This compares effective sample counts. Each R is measured against
+shuffled chunks of its own corpus, so it does not compare the absolute gradient noise of code and web text; that
+would also need the ratio of their per-chunk noise variances. Each chunk was run as a standalone 512-token
+sequence, so these numbers are a proxy for 16K-context training: real long-context gradients, where each chunk
+attends to the ones before it, were not measured.
 
 - **The effect persists through training.** Pythia-410M shows the same ordering at 0.7%, 5%, 25% and 100% of
   training.
-- **The code result is heavy-tailed.** A few repositories dominate it; the per-document numbers are in
+- **The code result is skewed.** A few of the 16 repositories dominate it; the per-document numbers are in
   `report.json`, under `secondary`.
 
 ## What this does *not* show
@@ -45,30 +51,35 @@ about 2×; books are close to the control.
   short-context quality. Testing that needs training runs that hold documents per step fixed while varying the
   window, and those were not run.
 - **The preregistered verdict is INCONCLUSIVE.** The packed-web control was expected to have R(16K) < 1.2, but
-  it measured 1.26–1.41. Short web documents straddle chunk boundaries, so the control has real short-lag
-  correlation. The control-relative criterion was added as [docs/ADDENDUM_001.md](docs/ADDENDUM_001.md) before
-  the confirmatory 1B-class data existed; under it, the result **survives**. Some early 1B-class checkpoints are
+  at the final checkpoints it measured 1.26–1.41. Short web documents straddle chunk boundaries, so the control has real short-lag
+  correlation. The control-relative criterion was added as [docs/ADDENDUM_001.md](docs/ADDENDUM_001.md) after all
+  Pythia-410M results and part of the 1B-class data had been seen, including half of the Pythia-1.4B final WEB
+  cell, so it is not fully blind. Under it, none of the stopping criteria fire (the result **survives**). Some early 1B-class checkpoints are
   incomplete.
 - **Known limitations:**
-  - Cross-document pairs are formed only within 4-document shards, so the estimate is unbiased but noisier than
-    planned.
+  - Cross-document pairs are formed only within 4-document shards, so the estimate is noisier than planned (the
+    restriction itself does not bias it).
   - G3 fails for Pythia-1.4B PG-19: the S_cross interval crosses 0. That affects only that cell's B_simple.
 
 ## Related work
 
-The idea that tokens in one sequence give correlated gradients is not new; as far as I can tell, measuring it is.
+The idea that tokens in one sequence give correlated gradients is not new; as far as I can tell, measuring it
+as a function of distance, with the design effect it implies, is.
 
 - **Everett & Qiu (arXiv 2609.04577, App. I).** They note that tokens within a sequence "share context and are
   likely more correlated". They propose comparing (batch, length) splits at matched tokens as future work.
 - **McCandlish et al. (1812.06162).** They define the gradient noise scale B_simple used here.
+- **Thomas (arXiv 2607.05872).** A shuffled-document control on real LM gradients, used to show that
+  within-document correlation explains only a small part of a gradient-spectrum effect. No distance profile or
+  design effect.
 - **Critical-batch-size work (e.g. 2410.21676).** It reports little sensitivity to context length, but on packed
   data.
 - **Dataset Decomposition (2405.13226) and ProLong (2410.02660).** They study sequence-length curricula and
   long-document data mixes; ProLong's long data is drawn from code repositories and books. They do not measure
   gradient correlation.
 
-I found no prior measurement of within-document gradient correlation against token distance on real LM
-gradients. Corrections are welcome.
+I found no prior measurement of within-document gradient correlation against token distance, or of the design
+effect it implies, on real LM gradients. Corrections are welcome.
 
 ## Method
 
@@ -105,6 +116,23 @@ python code/analyze.py --out report.json          # re-derive every number above
   `python code/probe.py --model EleutherAI/pythia-410m --revision step143000 --tok pythia --corpus REPOS --out results/...`.
 - **Input spans:** `data/manifest.json` records document indices and span hashes, and `code/data_prep.py` and `data/checkpoint_revisions.json` pin every Hub dataset, tokenizer and checkpoint revision, so
   rebuilt spans can be checked against the ones used here.
+
+## Citation
+
+The illustrated report and this repository (without the Gram matrices, which it pins by SHA-256) are archived
+on Zenodo: [doi:10.5281/zenodo.23268862](https://doi.org/10.5281/zenodo.23268862). An interactive version of the report is at
+[severinvisionary.github.io/doc-batch-gradients](https://severinvisionary.github.io/doc-batch-gradients/).
+
+```bibtex
+@techreport{yang2026wholedocbatch,
+  author = {Yang, Hanyu},
+  title  = {Whole-document batches are smaller than they look: measuring within-document gradient correlation},
+  year   = {2026},
+  institution = {Zenodo},
+  doi    = {10.5281/zenodo.23268862},
+  url    = {https://doi.org/10.5281/zenodo.23268862}
+}
+```
 
 ## License
 
