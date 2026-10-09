@@ -1,0 +1,26 @@
+{
+ "args": {
+  "model": "allenai/OLMo-2-0425-1B",
+  "revision": "stage1-step90000-tokens189B",
+  "tok": "olmo2",
+  "corpus": "ARXIV",
+  "docs": "4:8",
+  "chunk": 512,
+  "exact_ref": false,
+  "threads": 4,
+  "out": "results/allenai__OLMo-2-0425-1B/stage1-step90000-tokens189B/ARXIV_c512_d4-8.npz"
+ },
+ "chunks": 128,
+ "chunks_per_doc": 32,
+ "sketch": "count sketch, 131072 buckets per group",
+ "seed": 20261007,
+ "seconds_load": 29.808476448059082,
+ "seconds_chunks": 6389.002420902252,
+ "torch": "2.14.1+cpu",
+ "transformers": "4.57.6",
+ "numpy": "2.4.6",
+ "python": "3.11.17",
+ "threads": 4,
+ "machine": "x86_64",
+ "spans_sha256": "3f9a8cfc33540a420af585ce1fe0c0a50bf380c4cbd1c37c2700653c383cfc5e"
+}

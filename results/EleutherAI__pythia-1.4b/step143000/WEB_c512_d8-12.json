@@ -1,0 +1,26 @@
+{
+ "args": {
+  "model": "EleutherAI/pythia-1.4b",
+  "revision": "step143000",
+  "tok": "pythia",
+  "corpus": "WEB",
+  "docs": "8:12",
+  "chunk": 512,
+  "exact_ref": false,
+  "threads": 4,
+  "out": "results/EleutherAI__pythia-1.4b/step143000/WEB_c512_d8-12.npz"
+ },
+ "chunks": 128,
+ "chunks_per_doc": 32,
+ "sketch": "count sketch, 131072 buckets per group",
+ "seed": 20261007,
+ "seconds_load": 29.450976133346558,
+ "seconds_chunks": 6403.987402439117,
+ "torch": "2.14.1+cpu",
+ "transformers": "4.57.6",
+ "numpy": "2.4.6",
+ "python": "3.11.17",
+ "threads": 4,
+ "machine": "x86_64",
+ "spans_sha256": "3173d4efa6691f06ba4a3be3f5a7d25ca88f3dff843fcba957b04ff787cd0f71"
+}
