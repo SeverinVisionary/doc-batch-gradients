@@ -3,7 +3,7 @@ title: "Long documents make your batch smaller than it looks: measuring within-d
 message: "If you use this code or data, please cite it as below."
 type: dataset
 version: "2.0"
-doi: "10.5281/zenodo.23270769"
+doi: "10.5281/zenodo.23268861"
 date-released: "2026-10-09"
 url: "https://severinvisionary.github.io/doc-batch-gradients/"
 repository-code: "https://github.com/SeverinVisionary/doc-batch-gradients"
@@ -34,6 +34,6 @@ preferred-citation:
       family-names: Yang
       orcid: "https://orcid.org/0009-0005-0419-4070"
   year: 2026
-  doi: "10.5281/zenodo.23270769"
+  doi: "10.5281/zenodo.23268861"
   publisher:
     name: Zenodo

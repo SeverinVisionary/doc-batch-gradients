@@ -3,7 +3,7 @@
 **How much gradient noise do whole-document long-context batches add?** This is a preregistered measurement on
 open LM checkpoints.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23270769.svg)](https://doi.org/10.5281/zenodo.23270769)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268861.svg)](https://doi.org/10.5281/zenodo.23268861)
 
 Long-context training usually fills each sequence with a single long document, such as a book, a code
 repository or a paper. Chunks of one document are not independent samples. If their gradients are correlated,
@@ -120,7 +120,7 @@ python code/analyze.py --out report.json          # re-derive every number above
 ## Citation
 
 The illustrated report and this repository (without the Gram matrices, which it pins by SHA-256) are archived
-on Zenodo: [doi:10.5281/zenodo.23270769](https://doi.org/10.5281/zenodo.23270769). An interactive version of the report is at
+on Zenodo: [doi:10.5281/zenodo.23268861](https://doi.org/10.5281/zenodo.23268861), which resolves to the latest version. An interactive version of the report is at
 [severinvisionary.github.io/doc-batch-gradients](https://severinvisionary.github.io/doc-batch-gradients/).
 
 ```bibtex
@@ -129,8 +129,8 @@ on Zenodo: [doi:10.5281/zenodo.23270769](https://doi.org/10.5281/zenodo.23270769
   title  = {Long documents make your batch smaller than it looks: measuring within-document gradient correlation},
   year   = {2026},
   institution = {Zenodo},
-  doi    = {10.5281/zenodo.23270769},
-  url    = {https://doi.org/10.5281/zenodo.23270769}
+  doi    = {10.5281/zenodo.23268861},
+  url    = {https://doi.org/10.5281/zenodo.23268861}
 }
 ```
 
