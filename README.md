@@ -5,6 +5,8 @@ open LM checkpoints.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268861.svg)](https://doi.org/10.5281/zenodo.23268861)
 
+> **Correction (17 November 2026).** Measured with every chunk inside its document's full causal context, as in real long-context training, the 16K variance ratio is about 1.3 (Qwen2.5-1.5B and deepseek-coder-1.3b, on documents first created in 2026), below the preregistered hurdle of 1.5. The standalone-chunk measurement used here overstates the excess R − 1 about fivefold on the same documents (exploratory), so the claim that a code repository's chunks are worth 20–28% of the same amount of web text no longer stands. See [version 7 of the report](https://doi.org/10.5281/zenodo.24302210) and its [data](https://doi.org/10.5281/zenodo.24237717). This repository is kept unchanged as the record of version 6.
+
 Long-context training usually fills each sequence with a single long document, such as a book, a code
 repository or a paper. Chunks of one document are not independent samples. If their gradients are correlated,
 a batch of document-contiguous sequences carries fewer independent samples than its token count suggests: it
